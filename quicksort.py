@@ -1,4 +1,4 @@
-def quickSort(L,low,high):
+def quick_sort(L,low,high):
 	i=low
 	j=high
 	if i>=j:
@@ -17,4 +17,4 @@ def quickSort(L,low,high):
 	return L
 
 if __name__=='__main__':
-	print(quickSort([3,7,24,56,5,9,10,2,7],0,8))
+	print(quick_sort([3,7,24,56,5,9,10,2,7],0,8))

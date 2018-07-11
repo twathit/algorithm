@@ -1,5 +1,5 @@
 
-def buildSort(arr):
+def build_heap(arr):
 	import math
 	for i in range(math.floor(len(arr)/2)-1,-1,-1):
 		heapify(arr,i)
@@ -19,10 +19,10 @@ def heapify(arr,i):
 def swap(arr,i,j):
 	arr[i],arr[j]=arr[j],arr[i]
 
-def heapSort(arr):
+def heap_sort(arr):
 	global length
 	length=len(arr)
-	buildSort(arr)
+	build_heap(arr)
 	for i in range(len(arr)-1,0,-1):
 		swap(arr,0,i)
 		length-=1
@@ -30,4 +30,4 @@ def heapSort(arr):
 	return arr
 
 if __name__=='__main__':
-	print(heapSort([3,7,24,56,5,9,10,2,7]))
+	print(heap_sort([3,7,24,56,5,9,10,2,7]))

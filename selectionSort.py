@@ -1,4 +1,4 @@
-def selectionSort(arr):
+def selection_sort(arr):
 	for i in range(len(arr)-1):
 		minIndex=i
 		for j in range(i+1,len(arr)):
@@ -9,4 +9,4 @@ def selectionSort(arr):
 	return arr
 
 if __name__=='__main__':
-	print(selectionSort([3,7,24,56,5,9,10,2,7]))
+	print(selection_sort([3,7,24,56,5,9,10,2,7]))

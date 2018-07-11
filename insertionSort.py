@@ -1,4 +1,4 @@
-def insertionSort(arr):
+def insertion_sort(arr):
 	for i in range(1,len(arr)):
 		preIndex=i-1
 		current=arr[i]
@@ -9,4 +9,4 @@ def insertionSort(arr):
 	return arr
 
 if __name__=='__main__':
-	print(insertionSort([3,7,24,56,5,9,10,2,7]))
+	print(insertion_sort([3,7,24,56,5,9,10,2,7]))
