@@ -40,6 +40,6 @@ def find_min(list):
 
 
 if __name__ == '__main__':
-	print(binary_search_for_minimum([4,5,7,8,1,2,3]))
-	print(binary_search_for_minimum([1,2,3,4,5,6,7]))
-	print(binary_search_for_minimum([1,0,1,1,1]))
+	print(find_minimum_in_rotated_sorted_array([4,5,7,8,1,2,3]))
+	print(find_minimum_in_rotated_sorted_array([1,2,3,4,5,6,7]))
+	print(find_minimum_in_rotated_sorted_array([1,0,1,1,1]))

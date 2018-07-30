@@ -22,8 +22,8 @@ def search_in_rotated_sorted_array(list,item):
 		if list[mid]==item:
 			return mid
 		if (list[low]==list[mid] and list[high]==list[mid]):
-            low=low+1
-            high=high-1
+            #low=low+1
+			high=high-1
 		elif (list[low]<=list[mid] and (item>list[mid] or item<list[low])) or (list[low]>=list[mid] and (item>list[mid] and item<list[low])):
 			low = mid + 1
 		else:
@@ -31,5 +31,5 @@ def search_in_rotated_sorted_array(list,item):
 	return -1
 
 if __name__ == '__main__':
-	print(binary_search_for_halfsortedsequence([4,5,7,8,1,2,3],5))
-	print(binary_search_for_halfsortedsequence([1,2,3,4,5,6,7],5))
+	print(search_in_rotated_sorted_array([4,5,7,8,1,2,3],5))
+	print(search_in_rotated_sorted_array([1,2,3,4,5,6,7],5))
